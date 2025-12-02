@@ -1,0 +1,1220 @@
+[00:00:00.583] Server  LOG      ✓ Ready in 429ms
+[00:00:01.684] Server  ERROR    ⨯ ./app/Components/Products.tsx:8:1
+Module not found: Can't resolve '../Pages/ProductDetail'
+   6 | import { PRODUCTS } from "@/app/data/products";
+   7 | import { useCart } from "@/app/context/CartContext";
+>  8 | import ProductDetailPage from "../Pages/ProductDetail"; // Import the detail page
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // -------------------------------
+  11 | // PRODUCT TYPE
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:02.347] Browser ERROR   uncaughtError: Error: ./app/Components/Products.tsx:8:1
+Module not found: Can't resolve '../Pages/ProductDetail'
+   6 | import { PRODUCTS } from "@/app/data/products";
+   7 | import { useCart } from "@/app/context/CartContext";
+>  8 | import ProductDetailPage from "../Pages/ProductDetail"; // Import the detail page
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // -------------------------------
+  11 | // PRODUCT TYPE
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:02.502] Browser ERROR   ./app/Components/Products.tsx:8:1
+Module not found: Can't resolve '../Pages/ProductDetail'
+   6 | import { PRODUCTS } from "@/app/data/products";
+   7 | import { useCart } from "@/app/context/CartContext";
+>  8 | import ProductDetailPage from "../Pages/ProductDetail"; // Import the detail page
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // -------------------------------
+  11 | // PRODUCT TYPE
+
+Import traces:
+  Client Component Browser:
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:02.502] Browser ERROR   ./app/Components/Products.tsx:8:1
+Module not found: Can't resolve '../Pages/ProductDetail'
+   6 | import { PRODUCTS } from "@/app/data/products";
+   7 | import { useCart } from "@/app/context/CartContext";
+>  8 | import ProductDetailPage from "../Pages/ProductDetail"; // Import the detail page
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | // -------------------------------
+  11 | // PRODUCT TYPE
+
+Import traces:
+  Client Component Browser:
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:50.844] Server  ERROR    ⨯ ReferenceError: im is not defined
+[00:00:51.002] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:51.144] Browser ERROR   uncaughtError: ReferenceError: im is not defined
+[00:00:52.952] Server  LOG      ✓ Compiled in 27ms
+[00:00:53.054] Browser ERROR   ./app/Components/Products.tsx:13:1
+Parsing ecmascript source code failed
+  11 | // PRODUCT TYPE
+  12 | // -------------------------------
+> 13 | interface ProductType {
+     | ^^^^^^^^^
+  14 |   id: number | string;
+  15 |   name: string;
+  16 |   price: number;
+
+Expected ',', got 'interface'
+
+Import traces:
+  Client Component Browser:
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:00:57.809] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:57.809] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/Components/Products.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:00:57.809] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:57.982] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:26.774] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:02.304] Server  LOG      ✓ Compiled in 16ms
+[00:10:03.550] Server  LOG      ✓ Compiled in 40ms
+[00:10:06.129] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:31.243] Server  LOG      ✓ Compiled in 24ms
+[00:14:31.327] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `TrendingProducts`.
+[00:14:33.371] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.373] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.374] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.375] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.386] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.387] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.388] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.389] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.391] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.392] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.393] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.394] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.395] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.396] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.397] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.397] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.399] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.399] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.400] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.401] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.402] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.404] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.404] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.405] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.407] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.408] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.409] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.410] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.411] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.412] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.413] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.414] Server  ERROR    ⨯ ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.417] Server  LOG      ✓ Compiled in 60ms
+[00:14:33.520] Browser ERROR   ./app/Pages/ProductDetail.tsx/page.tsx:302:1
+Module not found: Can't resolve '@/app/components/ProductDetailPage'
+  300 | import { useParams, useRouter } from "next/navigation";
+  301 | import { PRODUCTS } from "@/app/data/products";
+> 302 | import ProductDetailPage from "@/app/components/ProductDetailPage";
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  303 |
+  304 | export default function ProductPage() {
+  305 |   const params = useParams();
+
+Import map: aliased to relative './app/components/ProductDetailPage' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component Browser]
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Pages/ProductDetail.tsx/page.tsx [Client Component SSR]
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:14:50.249] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:14:50.249] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:14:50.520] Server  ERROR    ⨯ Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[00:14:50.640] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:50.783] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `HomePage`.
+[00:14:52.330] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:14:52.399] Server  LOG      ✓ Compiled in 36ms
+[00:14:52.492] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:57.874] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:59.669] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:04.131] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:01.316] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:03.417] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:17.812] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:19.524] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:55.068] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:06.977] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:20.964] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:21.981] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:23.030] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:24.779] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:53.436] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:54.638] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:58.712] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:40.794] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:41.831] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:43.093] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:44.681] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:43.094] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:44.377] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:45.455] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:46.442] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:40.018] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:41.192] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:42.112] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:43.234] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:28.267] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:29.329] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:30.106] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:30.568] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:31.278] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:53.836] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:49.471] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:42:17.151] Server  LOG      ✓ Compiled in 14ms
+[00:42:20.624] Server  LOG      ✓ Compiled in 23ms
+[00:42:22.615] Server  LOG      ✓ Compiled in 17ms
+[00:42:26.427] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:42:26.602] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectErrorBoundary router={{...}}>
+      <InnerLayoutRouter url="/Pages/Pro..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+        <SegmentViewNode type="page" pagePath="Pages/Prod...">
+          <SegmentTrieNode>
+          <ClientPageRoot Component={function ProductListingPage} serverProvidedParams={{...}}>
+            <ProductListingPage params={Promise} searchParams={Promise}>
+              <div className="min-h-scre...">
+                <div>
+                <div className="max-w-[140...">
+                  <div className="flex gap-8">
+                    <aside>
+                    <main className="flex-1">
+                      <div>
+                      <div className="grid gap-6...">
+                        <div className="group curs...">
+                          <div>
+                          <p>
+                          <h3>
+                          <div className="flex items...">
+                            <svg>
+                            <svg>
+                            <svg>
+                            <svg>
+                            <svg>
+                            <span className="text-xs te...">
++                             26
+-                             41
+                              ...
+                          ...
+                        ...
+        ...
+      ...
+
+[00:42:42.958] Server  LOG      ✓ Compiled in 23ms
+[00:42:44.815] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:42:47.449] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:42:56.310] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:42:57.222] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:49.717] Server  LOG      ✓ Compiled in 22ms
+[00:48:52.050] Server  LOG      ✓ Compiled in 20ms
+[01:29:03.927] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:06.683] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:11.274] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:13.180] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:45:06.830] Server  LOG      ✓ Compiled in 17ms
+[01:45:06.934] Browser ERROR   ./app/Components/Products.tsx:23:1
+Parsing ecmascript source code failed
+  21 |   sizes: string[];
+  22 | }
+> 23 | /home/irfana/Documents/irfana/project/BabyDay/app
+     | ^^^^^^^^^^^^
+  24 | interface Props {
+  25 |   title: string;
+  26 | }
+
+Unknown regular expression flags.
+
+Import traces:
+  Client Component Browser:
+    ./app/Components/Products.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/Components/Products.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:45:09.699] Server  LOG      ✓ Compiled in 14ms

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Heart, Eye, X } from "lucide-react";
 import { PRODUCTS } from "@/app/data/products";
 import { useCart } from "@/app/context/CartContext";
@@ -24,8 +25,8 @@ interface Props {
   title: string;
 }
 
-
 const TrendingProducts = ({ title }: Props) => {
+  const router = useRouter();
   const [hoveredProduct, setHoveredProduct] = useState<number | null>(null);
   const [likedProducts, setLikedProducts] = useState<(number | string)[]>([]);
   const [selectedProduct, setSelectedProduct] = useState<ProductType | null>(null);
@@ -44,7 +45,7 @@ const TrendingProducts = ({ title }: Props) => {
   };
 
   // -------------------------------
-  // Open Modal
+  // Open Quick View Modal
   // -------------------------------
   const openModal = (product: ProductType) => {
     setSelectedProduct(product);
@@ -59,6 +60,13 @@ const TrendingProducts = ({ title }: Props) => {
     setSelectedProduct(null);
     setSelectedSize("");
     setQuantity(1);
+  };
+
+  // -------------------------------
+  // Navigate to Product Detail Page
+  // -------------------------------
+  const goToProductPage = (productId: number | string) => {
+    router.push(`/Pages/product/${productId}`);
   };
 
   // -------------------------------
@@ -99,6 +107,7 @@ const TrendingProducts = ({ title }: Props) => {
             className="group cursor-pointer relative"
             onMouseEnter={() => setHoveredProduct(index)}
             onMouseLeave={() => setHoveredProduct(null)}
+            onClick={() => goToProductPage(product.id)} // Navigate to product page
           >
             {/* IMAGE */}
             <div className="relative rounded-lg overflow-hidden aspect-square mb-4">
@@ -159,7 +168,10 @@ const TrendingProducts = ({ title }: Props) => {
                 >
                   <button
                     className="w-full bg-white text-black font-medium py-2.5 rounded-lg shadow-lg hover:bg-gray-100 transition"
-                    onClick={() => openModal(product)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      openModal(product);
+                    }}
                   >
                     Select options
                   </button>
@@ -192,7 +204,7 @@ const TrendingProducts = ({ title }: Props) => {
         </Link>
       </div>
 
-      {/* MODAL POPUP */}
+      {/* QUICK VIEW MODAL POPUP */}
       {selectedProduct && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
           <div className="bg-white rounded-lg w-11/12 md:w-2/3 lg:w-1/2 p-6 relative max-h-[90vh] overflow-y-auto">
@@ -256,13 +268,24 @@ const TrendingProducts = ({ title }: Props) => {
                   />
                 </div>
 
-                {/* ADD TO CART */}
-                <button
-                  onClick={handleAddToCart}
-                  className="w-full bg-black text-white py-3 rounded hover:bg-gray-800 transition"
-                >
-                  Add to Cart
-                </button>
+                {/* BUTTONS */}
+                <div className="space-y-2">
+                  <button
+                    onClick={handleAddToCart}
+                    className="w-full bg-black text-white py-3 rounded hover:bg-gray-800 transition"
+                  >
+                    Add to Cart
+                  </button>
+                  <button
+                    onClick={() => {
+                      closeModal();
+                      goToProductPage(selectedProduct.id);
+                    }}
+                    className="w-full border-2 border-black text-black py-3 rounded hover:bg-gray-50 transition"
+                  >
+                    View Full Details
+                  </button>
+                </div>
               </div>
             </div>
           </div>
