@@ -1,0 +1,228 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { AuthProvider } from "@/components/context/AuthContext";
+import { CartProvider } from "@/components/context/CartContext";
+import { WishlistProvider } from "@/components/context/WishlistContext";
+import { FilterProvider } from "@/components/context/FilterContext";
+import Header from "@/components/screens/general/Header";
+import Footer from "@/components/screens/general/Footer";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "BabyDay - Your Baby Products Store",
+  description: "Quality baby products for your little ones",
+  manifest: "/manifest.json",
+  themeColor: "#000000",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "BabyDay",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+  },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/icon-192x192.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      </head>
+      <body className={inter.className}>
+        <AuthProvider>
+          <CartProvider>
+            <WishlistProvider>
+              <FilterProvider>
+                <Header />
+                <main className="min-h-screen">
+                  {children}
+                </main>
+                <Footer />
+              </FilterProvider>
+            </WishlistProvider>
+          </CartProvider>
+        </AuthProvider>
+      </body>
+    </html>
+  );
+}
+
+
+
+
+
+
+
+
+
+// import type { Metadata } from "next";
+// import { Inter } from "next/font/google";
+// import "./globals.css";
+// import { AuthProvider } from "@/components/context/AuthContext";
+// import { CartProvider } from "@/components/context/CartContext";
+// import { WishlistProvider } from "@/components/context/WishlistContext";
+// import { FilterProvider } from "@/components/context/FilterContext";
+// import Header from "@/components/screens/general/Header";
+// import Footer from "@/components/screens/general/Footer";
+
+// const inter = Inter({ subsets: ["latin"] });
+
+// export const metadata: Metadata = {
+//   title: "BabyDay - Your Baby Products Store",
+//   description: "Quality baby products for your little ones",
+// };
+
+// export default function RootLayout({
+//   children,
+// }: {
+//   children: React.ReactNode;
+// }) {
+//   return (
+//     <html lang="en">
+//       <body className={inter.className}>
+//         <AuthProvider>
+//           <CartProvider>
+//             <WishlistProvider>
+//               <FilterProvider>
+//                 <Header />
+//                 <main className="min-h-screen">
+//                   {children}
+//                 </main>
+//                 <Footer />
+//               </FilterProvider>
+//             </WishlistProvider>
+//           </CartProvider>
+//         </AuthProvider>
+//       </body>
+//     </html>
+//   );
+// }
+
+
+
+
+
+
+
+// import { Geist, Geist_Mono } from "next/font/google";
+
+
+// import "./globals.css";
+// import Wrapper from "@/components/includes/HeaderFooterWrapper";
+// import { CartProvider } from "@/components/context/CartContext";
+// import { WishlistProvider } from "@/components/context/WishlistContext";
+// import { AuthProvider } from "@/components/context/AuthContext";
+
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
+
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
+
+// export const metadata = {
+//   title: "BabyDay - Tiny Treasures to Teen Trends",
+//   description: "Shop quality products online",
+//   manifest: "/manifest.json",
+//   themeColor: "#000000",
+//   appleWebApp: {
+//     capable: true,
+//     statusBarStyle: "default",
+//     title: "BabyDay",
+//   },
+//   viewport: {
+//     width: "device-width",
+//     initialScale: 1,
+//     maximumScale: 1,
+//   },
+// };
+
+// export default function RootLayout({ children }) {
+//   return (
+//     <html lang="en">
+//       <head>
+//         <link rel="icon" href="/favicon.ico" />
+//         <link rel="apple-touch-icon" href="/icon-192x192.png" />
+//         <meta name="apple-mobile-web-app-capable" content="yes" />
+//         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+//       </head>
+//       <body
+//         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+//       >
+//         <AuthProvider>
+//           <CartProvider>
+//             <WishlistProvider>
+//               <Wrapper>{children}</Wrapper>
+//             </WishlistProvider>
+//           </CartProvider>
+//         </AuthProvider>
+//       </body>
+//     </html>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+// // import { Geist, Geist_Mono } from "next/font/google";
+// // import "./globals.css";
+// // import Wrapper from "@/components/includes/HeaderFooterWrapper";
+// // import { CartProvider } from "@/components/context/CartContext";
+// // import { WishlistProvider } from "@/components/context/WishlistContext";
+// // import { AuthProvider } from "@/components/context/AuthContext";
+
+// // const geistSans = Geist({
+// //   variable: "--font-geist-sans",
+// //   subsets: ["latin"],
+// // });
+
+// // const geistMono = Geist_Mono({
+// //   variable: "--font-geist-mono",
+// //   subsets: ["latin"],
+// // });
+
+// // export const metadata = {
+// //   title: "Create Next App",
+// //   description: "Generated by create next app",
+// // };
+
+// // export default function RootLayout({ children }) {
+// //   return (
+// //     <html lang="en">
+// //       <body
+// //         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+// //       >
+// //         <AuthProvider>
+// //           <CartProvider>
+// //             <WishlistProvider>
+// //               <Wrapper>{children}</Wrapper>
+// //             </WishlistProvider>
+// //           </CartProvider>
+// //         </AuthProvider>
+// //       </body>
+// //     </html>
+// //   );
+// // }

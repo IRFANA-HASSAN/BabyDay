@@ -1,0 +1,13 @@
+__turbopack_load_page_chunks__("/_app", [
+  "static/chunks/edcd3_next_dist_compiled_b46ad87c._.js",
+  "static/chunks/edcd3_next_dist_shared_lib_bd1a7de8._.js",
+  "static/chunks/edcd3_next_dist_client_0b9f4e5d._.js",
+  "static/chunks/edcd3_next_dist_564a89b4._.js",
+  "static/chunks/edcd3_next_app_9d4e8533.js",
+  "static/chunks/[next]_entry_page-loader_ts_23451cf1._.js",
+  "static/chunks/edcd3_react-dom_f6337268._.js",
+  "static/chunks/edcd3_885aea88._.js",
+  "static/chunks/[root-of-the-server]__a4f2cde4._.js",
+  "static/chunks/Downloads_Babyday-maind31_9_15_Babyday-main_frontend_pages__app_2da965e7._.js",
+  "static/chunks/63a6e_Babyday-maind31_9_15_Babyday-main_frontend_pages__app_3ce7fb76._.js"
+])
